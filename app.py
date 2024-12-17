@@ -10,10 +10,12 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 TOPICS = [
-    "Should animals be kept in zoos?",
-    "Is homework necessary for learning?",
-    "Should school uniforms be mandatory?",
-    "Is social media harmful to teenagers?"
+    "Would you like to live on Mars one day?",
+    "Should humans spend more money exploring space?",
+    "Is it better to travel to space or explore the deep ocean?",
+    "Is the Moon landing the greatest achievement in space?",
+    "Do you think there is life on other planets?",
+    ""
 ]
 
 # Initialize Generative AI with API key from environment variable
