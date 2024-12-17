@@ -23,7 +23,7 @@ genai.configure(api_key="AIzaSyCX4TV1u09XHV_tSGhsT16WKx16gmNRCC8")  # Replace wi
 model = genai.GenerativeModel("gemini-1.5-flash")
 app.secret_key = 'your_secret_key'
 
-@app.route('/')
+@app.route('/startdebate')
 def startdebate():
     print(" Clearing the arguments file after response.")
     arguments_path = "arguments.txt"
@@ -138,11 +138,11 @@ scenarios = [
 ]
 
 
-# @app.route('/')
-# def start_quiz():
-#     session['current_question'] = 0
-#     session['trust_score'] = 0  # Set initial meter value to 0
-#     return redirect(url_for('quiz'))
+@app.route('/')
+def start_quiz():
+    session['current_question'] = 0
+    session['trust_score'] = 0  # Set initial meter value to 0
+    return redirect(url_for('quiz'))
 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
