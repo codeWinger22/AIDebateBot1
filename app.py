@@ -14,7 +14,9 @@ TOPICS = [
     "Should humans spend more money exploring space?",
     "Is it better to travel to space or explore the deep ocean?",
     "Is the Moon landing the greatest achievement in space?",
-    "Do you think there is life on other planets?",
+    "Do you think` there is life on other planets?",
+    "Are cats better than dogs?",
+    "Should teachers give homework?"
     ""
 ]
 
